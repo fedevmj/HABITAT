@@ -1,0 +1,59 @@
+/* disabled */
+.disabled { background:#eee; }
+
+/* info text */
+.info_message_red {display:inline-block !important; margin:7px 0 !important; padding:0 0 0 19px !important; color:#dc241f; font-size:13px; background:url("../images/common/icon/icon_info.gif") no-repeat left center;}
+.info_essage_green {display:inline-block !important; margin:0 5px 0 0 !important; padding:0 0 0 19px !important; color:#005098; font-weight:600; background:url("../images/common/icon/icon_info2.gif") no-repeat left 2px;}
+.info_inline {}			/* message를 inline 으로 출력시 사용 */
+
+/* float */
+.fl { float:left !important; }
+.fr { float:right !important; }
+.clear { clear: both !important; }
+
+/* margin */
+.mgt5 { margin-top:5px !important; }
+.mgt10 { margin-top:10px !important; }
+.mgt15 { margin-top:15px !important; }
+.mgt20 { margin-top:20px !important; }
+
+.mgr5 { margin-right:5px !important; }
+.mgr10 { margin-right:10px !important; }
+.mgr15 { margin-right:15px !important; }
+.mgr20 { margin-right:20px !important; }
+
+.mgl5 { margin-left:5px !important; }
+.mgl10 { margin-left:10px !important; }
+.mgl15 { margin-left:15px !important; }
+.mgl20 { margin-left:20px !important; }
+
+.mgb5 { margin-bottom:5px !important; }
+.mgb10 { margin-bottom:10px !important; }
+.mgb15 { margin-bottom:15px !important; }
+.mgb20 { margin-bottom:20px !important; }
+
+/* 게시판 상단 정보 */
+.board_top { margin-bottom: 8px; text-align: right; font-size: 13px; color: #737373; *zoom: 1; }
+.board_top:after { display: block; content: ""; clear: both; }
+.board_top * { vertical-align: middle; }
+.board_top .leftU { float: left; padding: 5px 0 0 0; font-size: 13px; }
+.board_top .leftU label { vertical-align: middle; margin-right: 9px; }
+.board_top span { position: relative; top: 5px; margin-left: 20px; }
+.board_top span label { position: relative; top: 3px; margin-right: 2px; }
+.board_top span span { position: relative; top: 4px; margin: 0 2px 0 3px; vertical-align: top; }
+.board_top span em { font-style: normal; vertical-align: 0; color: #dc241f; font-weight: bold; }
+.board_top select { height: 24px; line-height: 24px; padding: 0; margin-right: 2px; }
+.board_top input[type~="text"] { height: 22px; line-height: 22px; }
+.board_top input[type="checkbox"] { vertical-align: middle; }
+
+
+/* paging 
+.paging .paging_body { *zoom: 1; margin: 0 auto; display:table; }
+.paging .paging_body:after { display: block; content: ""; clear: both; }
+.paging span { float: left; margin: 0 5px; }
+.paging a { float: left; width: 25px; height: 25px; line-height: 25px; vertical-align: top; border: 1px solid #e6e6e6; border-left-width: 0; text-align: center; background: #fff; }
+.paging a.firstchild { border-left-width: 1px; }
+.paging a.on { color: #d3d5d7; font-weight: 600; text-decoration: underline; border: 1px solid #003580; background: #003580; }
+.paging a img {margin-top: 9px; vertical-align:top;}
+*/
+/*  한철규 common.css에도 paging 클래스가 있네요. 다른 페이지들이 깨지네요. ㅠㅠ common.css의 이름을 바꿔야 할듯합니다.*/
