@@ -4,12 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO -->
+    <meta name="description" content="한국 해비타트 클론코딩 사이트입니다." />
+    <meta name="keywords" content="해비타트, HABITAT" />
+    <meta name="author" content="Minjae Lee" />
+    <meta name="og:site_name" content="한국 해비타트 클론코딩 사이트" />
+    <meta name="og:title" content="한국 해비타트 클론코딩 사이트" />
+    <meta name="og:description" content="한국 해비타트 클론코딩 사이트입니다." />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://fedevmj.github.io/HABITAT/" />
+    <meta name="og:image" content="https://fedevmj.github.io/HABITAT/images/logo.png" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
     <link rel="shortcut icon" href="images/favicon.png">
     <title>한국해비타트</title>
 
-    <link rel="apple-touch-icon-precomposed" href="images/mobile_web_icon.png">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
@@ -18,12 +29,39 @@
     <!-- swiper -->
     <link rel="stylesheet" href="js/swiper/swiper.min.css">
     <script src="js/swiper/swiper.min.js"></script>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- main -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
 
 <body>
+
+    <div class="modal">
+        <div class="modal-wrap">
+            <div class="modal-box modal-front">
+                <i class="fas fa-hands-helping"></i>
+                <h1> HABITAT </h1>
+                <h2>이 사이트는 스터디용으로 제작되었으며<br>
+                    리소스는 원저작자에게 있습니다.</h2>
+                <span>본 사이트는 Chrome에 최적화 되어있습니다.</span>
+            </div>
+
+            <div class="modal-box modal-back">
+                <ul class="modal-list">
+                    <h3><i class="fas fa-bullhorn"></i> <u>다음 내용을 적용하였습니다</u> :) </h3>
+                    <li>1. <b>스크린의 위치</b> 따라 스타일이 변화하는 주메뉴를 구현하였습니다.</li>
+                    <li>2. <b>햄버거메뉴 애니메이션</b> 기능을 구현하였습니다.</li>
+                    <li>3. <b>iframe 태그</b>를 이용하여 동영상 썸네일 이미지와 동영상 링크를 연결하였습니다.</li>
+                </ul>
+            </div>
+
+            <button class="modal-close"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
 
     <button class="donation-button"></button>
 
@@ -56,9 +94,9 @@
                     </ul>
 
                     <button class="header-more">
-                        <span class="header-more-line-top"></span>
-                        <span class="header-more-line-middle"></span>
-                        <span class="header-more-line-bottom"></span>
+                        <span class="header-line line-top"></span>
+                        <span class="header-line line-middle"></span>
+                        <span class="header-line line-bottom"></span>
                     </button>
                 </div>
 
@@ -75,27 +113,27 @@
                             <li><a href="#">투명경영</a></li>
                             <li><a href="#">지회</a></li>
                         </ul>
-        
+
                         <ul class="submenu-list">
                             <li><a href="#">캠페인후원</a></li>
                             <li><a href="#">정기후원</a></li>
                             <li><a href="#">기업/단체후원</a></li>
                             <li><a href="#">특별후원</a></li>
                         </ul>
-        
+
                         <ul class="submenu-list">
                             <li><a href="#">국내자원봉사</a></li>
                             <li><a href="#">해외자원봉사</a></li>
                             <li><a href="#">자원봉사 일정/신청</a></li>
                         </ul>
-        
+
                         <ul class="submenu-list">
                             <li><a href="#">국내사업</a></li>
                             <li><a href="#">해외사업</a></li>
                             <li><a href="#">옹호사업</a></li>
                             <li><a href="#">교육사업</a></li>
                         </ul>
-        
+
                         <ul class="submenu-list">
                             <li><a href="#">뉴스룸</a></li>
                             <li><a href="#">후원소식</a></li>
@@ -104,10 +142,10 @@
                             <li><a href="#">공지/뉴스</a></li>
                             <li><a href="#">인재채용</a></li>
                             <li><a href="#">FAQ</a></li>
-                        </ul>    
+                        </ul>
                     </div>
-                    
-                    </div>
+
+                </div>
             </div>
         </header>
         <!-- // 상단 -->
@@ -267,7 +305,7 @@
                                 <div class="donation-box-desc">
                                     <h3>개인</h3>
                                     <p>한 가정을 세우는 일, <br>
-                                    당신의 후원으로 시작됩니다.</p>
+                                        당신의 후원으로 시작됩니다.</p>
                                     <span>MORE VIEW</span>
                                 </div>
                             </a>
@@ -278,7 +316,7 @@
                                 <div class="donation-box-desc">
                                     <h3>기업</h3>
                                     <p>기업과의 파트너십을 통해 전세계 모든 사람에게 <br>
-                                    안락한 집이 있는 세상을 만듭니다.</p>
+                                        안락한 집이 있는 세상을 만듭니다.</p>
                                     <span>MORE VIEW</span>
                                 </div>
                             </a>
@@ -289,7 +327,7 @@
                                 <div class="donation-box-desc">
                                     <h3>교회</h3>
                                     <p>하나님의 사랑과 가르침을<br>
-                                    행동으로 실천할 수 있습니다.</p>
+                                        행동으로 실천할 수 있습니다.</p>
                                     <span>MORE VIEW</span>
                                 </div>
                             </a>
@@ -315,7 +353,7 @@
                         <div class="volunteer-desc">
                             <h3>국내봉사</h3>
                             <p>땀과 열정을 나누고<br>
-                            이웃을 위한 건강한 공동체를 만듭니다.</p>
+                                이웃을 위한 건강한 공동체를 만듭니다.</p>
                             <a href="#" class="main-more">MORE VIEW</a>
                         </div>
                     </div>
@@ -324,7 +362,7 @@
                             <div class="volunteer-desc">
                                 <h3>봉사확인증</h3>
                                 <p>참여 내역을 확인하고<br>
-                                봉사확인증을 발급받을 수 있습니다.</p>
+                                    봉사확인증을 발급받을 수 있습니다.</p>
                                 <a href="#" class="main-more">MORE VIEW</a>
                             </div>
                         </div>
@@ -332,8 +370,8 @@
                             <div class="volunteer-desc">
                                 <h3>해외봉사</h3>
                                 <p>세계 속 열악한 주거환경을<br>
-                                이해하고 그들과 함께 꿈과 희망을<br>
-                                만들어 갑니다.</p>
+                                    이해하고 그들과 함께 꿈과 희망을<br>
+                                    만들어 갑니다.</p>
                                 <a href="#" class="main-more">MORE VIEW</a>
                             </div>
                         </div>
@@ -347,9 +385,9 @@
                     <div class="qna-box-desc">
                         <h4>투명한 재정 보고</h4>
                         <h3>후원금은<br>
-                        어떻게 사용되었나요?</h3>
+                            어떻게 사용되었나요?</h3>
                         <p>개인과 단체, 기업 등 각계에서 보내주신 소중한 후원금을<br>
-                        어디에 어떻게 사용했는지 확인할 수 있습니다.</p>
+                            어디에 어떻게 사용했는지 확인할 수 있습니다.</p>
                         <a href="#" class="main-more">MORE VIEW</a>
                     </div>
                 </div>
@@ -357,9 +395,9 @@
                     <div class="qna-box-desc">
                         <h4>기준과 원리</h4>
                         <h3>입주가정은<br>
-                        어떤 기준으로 선정되나요?</h3>
+                            어떤 기준으로 선정되나요?</h3>
                         <p>해비타트는 표준화된 평가 항목과<br>
-                        그에 따른 기준에 맞춰 입주가정을 선정하고 있습니다.</p>
+                            그에 따른 기준에 맞춰 입주가정을 선정하고 있습니다.</p>
                         <a href="#" class="main-more">MORE VIEW</a>
                     </div>
                 </div>
@@ -376,7 +414,10 @@
 
                     <div class="clip-wrap clearfix">
                         <div class="clip-box-left">
-                            <iframe width="960" height="557" src="https://www.youtube.com/embed/dzM7Ox4668A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="960" height="557" src="https://www.youtube.com/embed/dzM7Ox4668A"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                         <div class="clip-box-right">
                             <ul class="clip-list">
@@ -397,7 +438,7 @@
                         <div class="notice">
                             <div class="info-title">
                                 <h3>공지사항</h3>
-                                <a href="#" class="more"></a>    
+                                <a href="#" class="more"></a>
                             </div>
                             <ul class="info-list clearfix">
                                 <li>
@@ -421,7 +462,7 @@
                         <div class="news">
                             <div class="info-title">
                                 <h3>후원소식</h3>
-                                <a href="#" class="more"></a>    
+                                <a href="#" class="more"></a>
                             </div>
                             <ul class="info-list clearfix">
                                 <li>
@@ -457,7 +498,7 @@
                                 </button>
                                 <button class="sw-info-next">
                                     <img src="images/box-next.jpeg">
-                                </button>    
+                                </button>
                             </div>
 
                             <div class="swiper-container sw-info">
@@ -476,7 +517,7 @@
                                         <a href="#">
                                             <img src="images/media_2.jpeg">
                                             <h4>[한겨례]"기지촌 할머니들, 서로 기억하는 공간 됐으면 좋겠다"</h4>
-                                            <span class="date">2020-11-05</span>    
+                                            <span class="date">2020-11-05</span>
                                         </a>
                                     </div>
 
@@ -484,7 +525,7 @@
                                         <a href="#">
                                             <img src="images/media_3.jpeg">
                                             <h4>[한겨례 서울&] 오늘 주거 취약 아이들 위한 '토크 콘서트' 열려</h4>
-                                            <span class="date">2020-10-30</span>    
+                                            <span class="date">2020-10-30</span>
                                         </a>
                                     </div>
 
@@ -492,7 +533,7 @@
                                         <a href="#">
                                             <img src="images/media_4.jpeg">
                                             <h4>[연합뉴스TV]한국해비타트, 독립유공자 후손 집 고쳐주기 사업</h4>
-                                            <span class="date">2020-10-13</span>    
+                                            <span class="date">2020-10-13</span>
                                         </a>
                                     </div>
 
@@ -500,7 +541,7 @@
                                         <a href="#">
                                             <img src="images/media_5.jpeg">
                                             <h4>[중앙일보]한국해비타트, 2020 민관협력형 노후주택 개선사업 준공식 진행"</h4>
-                                            <span class="date">2021-06-28</span>    
+                                            <span class="date">2021-06-28</span>
                                         </a>
                                     </div>
 
@@ -516,7 +557,7 @@
                                         <a href="#">
                                             <img src="images/media_7.jpeg">
                                             <h4>[뉴시스]경북도, 무주택 청년들에게 이동식 목조주택 제공</h4>
-                                            <span class="date">2021-06-21</span>    
+                                            <span class="date">2021-06-21</span>
                                         </a>
                                     </div>
 
@@ -524,7 +565,7 @@
                                         <a href="#">
                                             <img src="images/media_8.jpeg">
                                             <h4>[아시아투데이]KCC글라스·한국 해비타트 후원협약</h4>
-                                            <span class="date">2021-04-13</span>    
+                                            <span class="date">2021-04-13</span>
                                         </a>
                                     </div>
 
@@ -540,7 +581,7 @@
                                         <a href="#">
                                             <img src="images/media_10.jpeg">
                                             <h4>[연합뉴스]대우건설, 한국해비타트와 MOU…"취약계층 주거환경 개선"</h4>
-                                            <span class="date">2021-04-13</span>    
+                                            <span class="date">2021-04-13</span>
                                         </a>
                                     </div>
 
@@ -672,76 +713,76 @@
 
         <!-- 하단 -->
         <footer class="footer">
-                <div class="footer-top">
-                    <div class="container clearfix">
+            <div class="footer-top">
+                <div class="container clearfix">
 
-                        <h3>해비타트의 새로운 소식을 <br> 이메일로 보내드립니다.</h3>
-                        
-                        <div class="personal-box">
-                            <span>신청자 이름</span>
-                            <form action="" method="">
-                                <input type="text" name="" class="name" id="name" placeholder="이름을 입력해주세요.">
-                            </form>
-                        </div>
+                    <h3>해비타트의 새로운 소식을 <br> 이메일로 보내드립니다.</h3>
 
-                        <div class="personal-box">
-                            <span>이메일 주소</span>
-                            <form action="" method="">
-                                <input type="text" name="" class="email" id="email" placeholder="이름을 입력해주세요.">
-                            </form>
-                        </div>
-
-                        <div class="newsletter-box">
-                            <a href="#" class="newsletter">뉴스레터 구독하기</a>
-                            <form action="" method="">
-                                <input type="checkbox" name="" class="policy" id="policy">
-                                <p>개인정보처리방침 이용동의[자세히]</p>
-                            </form>
-                        </div>
-
+                    <div class="personal-box">
+                        <span>신청자 이름</span>
+                        <form action="" method="">
+                            <input type="text" name="" class="name" id="name" placeholder="이름을 입력해주세요.">
+                        </form>
                     </div>
-                </div>
 
-                <div class="footer-bottom">
-                    <div class="container clearfix">
-                        
-                        <a href="#" class="footer-logo">
-                            <img src="images/flogo.jpeg">
-                        </a>
-
-                        <ul class="footer-bottom-link">
-                            <li><a href="#">해비타트소개</a></li>
-                            <li><a href="#">오시는길</a></li>
-                            <li><a href="#">인재채용</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">개인정보처리방침</a></li>
-                            <li><a href="#">이용약관</a></li>
-                            <li><a href="#">이메일무단수집거부</a></li>
-                        </ul>
-
-                        <div class="footer-bottom-txt">
-                            <span>전화 154403396</span> 
-                            <span>팩스 02-2272-1067</span>
-                            <span>이메일 khabitat@habityat.or.kr</span><br>
-                            <span>사단법인 한국해비타트</span> 
-                            <span>고유번호 2011-82-31475</span> 
-                            <span>이사장 윤형주</span>
-                            <span>(우)04598 서울 중구 동호로 195-7 송죽빌딩 2층~5층</span>
-                            <p>Copyright ⓒ 한국해비타트 all rights reserved.</p>
-                        </div>
-
-                        <div class="footer-sns">
-                            <a href="#" class="facebook"></a>
-                            <a href="#" class="instagram"></a>
-                            <a href="#" class="youtube"></a>
-                            <a href="#" class="blog"></a>
-                            <a href="#" class="happybean"></a>
-                            <a href="#" class="plusfriend"></a>
-                        </div>
-
+                    <div class="personal-box">
+                        <span>이메일 주소</span>
+                        <form action="" method="">
+                            <input type="text" name="" class="email" id="email" placeholder="이름을 입력해주세요.">
+                        </form>
                     </div>
+
+                    <div class="newsletter-box">
+                        <a href="#" class="newsletter">뉴스레터 구독하기</a>
+                        <form action="" method="">
+                            <input type="checkbox" name="" class="policy" id="policy">
+                            <p>개인정보처리방침 이용동의[자세히]</p>
+                        </form>
+                    </div>
+
                 </div>
-            </footer>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container clearfix">
+
+                    <a href="#" class="footer-logo">
+                        <img src="images/flogo.jpeg">
+                    </a>
+
+                    <ul class="footer-bottom-link">
+                        <li><a href="#">해비타트소개</a></li>
+                        <li><a href="#">오시는길</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                    </ul>
+
+                    <div class="footer-bottom-txt">
+                        <span>전화 154403396</span>
+                        <span>팩스 02-2272-1067</span>
+                        <span>이메일 khabitat@habityat.or.kr</span><br>
+                        <span>사단법인 한국해비타트</span>
+                        <span>고유번호 2011-82-31475</span>
+                        <span>이사장 윤형주</span>
+                        <span>(우)04598 서울 중구 동호로 195-7 송죽빌딩 2층~5층</span>
+                        <p>Copyright ⓒ 한국해비타트 all rights reserved.</p>
+                    </div>
+
+                    <div class="footer-sns">
+                        <a href="#" class="facebook"></a>
+                        <a href="#" class="instagram"></a>
+                        <a href="#" class="youtube"></a>
+                        <a href="#" class="blog"></a>
+                        <a href="#" class="happybean"></a>
+                        <a href="#" class="plusfriend"></a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
         <!-- // 하단 -->
 
     </div>
